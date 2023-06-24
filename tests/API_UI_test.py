@@ -108,7 +108,7 @@ def test_valid_text(page):
     """
     page.goto("https://groall.noda.pro/test_qa")
     page.get_by_title("Close").click()
-    page.locator("input[name=\"value\"]").fill("qwerty")
+    page.locator("input[name=\"value\"]").fill("null")
     page.get_by_role("button", name="Вывести").click()
     assert page.locator("#value-error").text_content() == "Поле должно содержать только цифры!"
 
