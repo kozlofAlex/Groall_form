@@ -163,6 +163,9 @@ def test_negative_value():
 @pytest.mark.ui
 # FORMS-10:	Установка чекбокса "Вывести всё" до ввода значения
 def test_valid_check(page):
+    """
+    Проверка установки чекбокса "Вывести всё"
+    """
     page.goto("https://groall.noda.pro/test_qa")
     page.get_by_title("Close").click()
     page.locator("#all").check()
@@ -174,7 +177,7 @@ def test_valid_check(page):
 # FORMS-12: Ввод SQL-инъекции
 def test_sql(page):
     """
-    Проверка валидационного сообщения когда введено эмоджи
+    Проверка валидационного сообщения при вводе SQL
     """
     page.goto("https://groall.noda.pro/test_qa")
     page.get_by_title("Close").click()
@@ -187,7 +190,7 @@ def test_sql(page):
 # FORMS-13: Устойчивость к XSS-атакам
 def test_XSS(page):
     """
-    Проверка валидационного сообщения когда введено эмоджи
+    Проверка валидационного сообщения при вводе XSS
     """
     page.goto("https://groall.noda.pro/test_qa")
     page.get_by_title("Close").click()
