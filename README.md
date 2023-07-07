@@ -4,14 +4,10 @@
 [Тестовая документация](https://docs.google.com/spreadsheets/d/1XSLXysYEPzcn2ZQx7stjbxF3ymXPbQeKhEBTCcwr4BM/edit?usp=sharing)
 
 
-Для запуска:
-1. Установить библиотеки из файла requirements
-    
-#### `pip install -r requirements.txt`
 
-2. Установить необходимые браузеры для работы Playwright:
+1. #### `pip install -r requirements.txt`
 
-#### `playwright install`
+2. #### `playwright install`
 
 3. Запустить тесты через Терминал, выполнив команду:
 
